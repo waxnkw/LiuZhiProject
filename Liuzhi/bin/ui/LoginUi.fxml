@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.text.*?>
+<?import org.controlsfx.glyphfont.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.validation.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="522.0" prefWidth="724.0" stylesheets="@Login.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoginUiController">
+   <children>
+      <VBox layoutX="95.0" layoutY="116.0" prefHeight="193.0" prefWidth="564.0">
+         <children>
+            <HBox alignment="CENTER" layoutX="270.0" layoutY="304.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                   <Label prefHeight="45.0" prefWidth="39.0" >
+                  		<graphic>
+                                <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                         <FontAwesomeIconView glyphName="USER" size="2.5em"
+                                                     styleClass="custom-jfx-list-view-icon"/>
+                                 </StackPane>
+               		     </graphic>
+                  </Label>
+                  <JFXTextField fx:id="nameTextField" prefHeight="30.0" prefWidth="365.0" promptText="用户名或电话号码" />
+               </children></HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="45.0" prefWidth="39.0" >
+                  		<graphic>
+                                <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                         <FontAwesomeIconView glyphName="LOCK" size="2.5em"
+                                                     styleClass="custom-jfx-list-view-icon"/>
+                                 </StackPane>
+               		     </graphic>
+                  </Label>
+                  <JFXPasswordField fx:id="passwordField" prefHeight="30.0" prefWidth="365.0" promptText="请输入密码" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="68.0" layoutY="366.0" prefHeight="157.0" prefWidth="619.0" spacing="20.0">
+         <children>
+            <JFXButton buttonType="RAISED" onMouseClicked="#login" prefHeight="60.0" prefWidth="400.0" styleClass="login-btn" text="登录" textAlignment="CENTER" />
+            <JFXButton buttonType="RAISED" prefHeight="60.0" prefWidth="400.0" ripplerFill="#12b1c9" styleClass="signin_btn" text="注册" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

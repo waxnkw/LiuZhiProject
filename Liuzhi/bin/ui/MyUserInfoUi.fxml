@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="1063.0" prefWidth="598.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MyUserInfoUiController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="778.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resource/image/smallFatFirewood.jpg" />
+               </image>
+            </ImageView>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="姓名：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="性别：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="260.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="出生年月：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                 <JFXDatePicker></JFXDatePicker>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="360.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="邮箱：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="460.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="qq：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="560.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="电话：">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </JFXTextField>
+               </children>
+            </HBox>
+            <JFXMasonryPane fx:id="masonryPane" prefHeight="363.0" prefWidth="598.0"/>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

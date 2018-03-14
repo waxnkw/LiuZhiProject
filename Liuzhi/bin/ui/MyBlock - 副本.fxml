@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="319.0" prefWidth="413.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MyBlockController">
+   <children>
+      <JFXRippler prefHeight="63.0" prefWidth="413.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="63.0" prefWidth="69.0">
+                     <graphic>
+                            <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                         <FontAwesomeIconView glyphName="BOOK" size="2.5em"
+                                                     styleClass="custom-jfx-list-view-icon"/>
+                            </StackPane>
+                     </graphic>>
+                  </Label>
+                  <JFXTextField fx:id="titleTextField" editable="false" prefHeight="63.0" prefWidth="215.0" text="标题">
+                     <font>
+                        <Font name="System Italic" size="24.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label prefHeight="20.0" prefWidth="53.0" text=" " />
+                  <Label prefHeight="63.0" prefWidth="72.0" text="money" />
+                  <Label fx:id="moneyLabel" prefHeight="41.0" prefWidth="58.0" text="15" />
+               </children>
+            </HBox>
+         </children>
+      </JFXRippler>
+      <JFXRippler layoutX="10.0" layoutY="10.0" prefHeight="202.0" prefWidth="413.0">
+         <children>
+            <JFXTextArea fx:id="contentTextArea" editable="false" prefHeight="175.0" prefWidth="413.0" text="啊发顺丰放松都会粉红色的改变授课风格汇告诉你的控股开始对你">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </JFXTextArea>
+         </children>
+      </JFXRippler>
+      <JFXRippler prefHeight="73.0" prefWidth="413.0">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="39.0" prefWidth="47.0" text="phone" />
+                        <Label fx:id="phoneNumLabel" prefHeight="41.0" prefWidth="297.0" text="18851831150" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </JFXRippler>
+   </children>
+</VBox>

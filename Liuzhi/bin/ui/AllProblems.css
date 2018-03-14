@@ -1,0 +1,97 @@
+/*-jfx-rippler-fill: RED; */
+
+
+/*******************************************************************************
+ *                                                                             *
+ * JFX Tool Bar                                                                *
+ *                                                                             *
+ ******************************************************************************/
+ 
+.jfx-tool-bar {
+    -fx-font-size: 15.0;
+	/*-fx-font-weight: BOLD; */ 
+    -fx-background-color: #5264AE;
+    -fx-pref-width: 100.0%;
+    /*-fx-pref-height: 64.0px;*/
+}
+
+.jfx-tool-bar HBox {
+    -fx-alignment: center;
+    -fx-spacing: 25.0;
+    -fx-padding: 0.0 10.0;
+}
+
+.jfx-tool-bar Label {
+    -fx-text-fill: rgba(255,255,255,0.9);
+}
+
+.custom-jfx-tool-bar-icon {
+    /*-fx-text-fill: #5264AE;*/
+    -fx-fill: rgba(255,255,255,0.9);
+    -fx-padding: 0.0 10.0 0.0 5.0;
+    -fx-cursor: hand;
+}
+
+/*******************************************************************************
+*                                                                              *
+* JFX Decorator                                                                *
+*                                                                              *
+*******************************************************************************/
+
+.jfx-decorator {
+    -fx-decorator-color: derive(#5264AE, -20%);
+}
+
+.jfx-decorator .jfx-decorator-buttons-container {
+    -fx-background-color: -fx-decorator-color;
+}
+
+.jfx-decorator .resize-border {
+    -fx-border-color: -fx-decorator-color;
+    -fx-border-width: 0 4 4 4;
+}
+
+.jfx-decorator .jfx-decorator-title-container .jfx-decorator-text {
+    -fx-fill: WHITE;
+    -fx-font-size: 20;
+}
+
+.jfx-decorator .jfx-decorator-title-container .jfx-svg-glyph {
+    -fx-shape: "M512 682c-128.024-99.309-255.626-199.040-384-298l384-298 384 298c-128.375 98.958-255.974 198.693-384 298zM512 792l314-246 70 54-384 298-384-298 70-54z";
+    -jfx-size: 15;
+    -fx-background-color: WHITE;
+}
+
+
+
+/*******************************************************************************
+ *                                                                             *
+ * MyBlock                                                               *
+ *                                                                             *
+ ******************************************************************************/
+ 
+ .my-block{
+ 	-fx-background-color:WHITE;
+ 	-fx-border-color:#E0E0E0;
+ }
+ 
+ .my-block-content{
+ 	-fx-text-fill:grey;
+ }
+
+ /* Icons Demo */
+.my-block-icon {
+	-fx-background-color:#FE774D;
+    -fx-text-fill: #FE774D;
+    -fx-cursor: hand;
+}
+
+.my-block-icons-rippler {
+    -jfx-rippler-fill: BLUE;
+    -jfx-mask-type: CIRCLE;
+}
+
+.my-block-icons-rippler:hover {
+    -fx-cursor: hand;
+}
+ 

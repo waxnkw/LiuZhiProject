@@ -1,0 +1,29 @@
+
+.root{
+	
+/* 	-fx-background-image:url('../resource/image/login.jpg') ;*/
+	-fx-background-size: 100% 120%;
+	 
+	-fx-background-color: #E5E5E5
+}
+
+
+
+/*button css*/
+.login-btn{
+	-fx-padding: 0.7em 0.57em;
+    -fx-font-size: 20px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: #FF4040;
+    -fx-pref-width: 400;
+    -fx-text-fill: WHITE;
+}
+
+.signin_btn{
+	-fx-padding: 0.7em 0.57em;
+    -fx-font-size: 20px;
+    -jfx-button-type: RAISED;
+    -fx-background-color: rgb(77, 102, 204);
+    -fx-pref-width: 400;
+    -fx-text-fill: WHITE;
+}

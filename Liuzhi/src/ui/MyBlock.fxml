@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" prefHeight="250.0" prefWidth="500.0" styleClass="my-block" stylesheets="@AllProblems.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MyBlockController">
+   <children>
+      <JFXRippler prefHeight="63.0" prefWidth="413.0" styleClass="my-block-icons-rippler">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label prefHeight="47.0" prefWidth="39.0" text=" ">
+                     <graphic>
+                            <StackPane styleClass="custom-jfx-list-view-icon-container">
+                               <children>
+                                            <FontAwesomeIconView glyphName="BOOK" size="1.5em" styleClass="my-block-icon" />
+                               </children>
+                            </StackPane>
+                     </graphic>>
+                  </Label>
+                  <Label fx:id="titleLabel" prefHeight="57.0" prefWidth="117.0" text="标题">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="147.0" text=" " />
+                  <Label prefHeight="47.0" prefWidth="40.0" text=" ">
+                     <graphic>
+                            <StackPane styleClass="custom-jfx-list-view-icon-container">
+                               <children>
+                                            <FontAwesomeIconView glyphName="RMB" size="1.5em" styleClass="my-block-icon" />
+                               </children>
+                            </StackPane>
+                     </graphic>>
+                  </Label>
+                  <Label fx:id="moneyLabel" prefHeight="41.0" prefWidth="58.0" text="15" />
+               </children>
+               <padding>
+                  <Insets left="3.0" />
+               </padding>
+            </HBox>
+         </children>
+      </JFXRippler>
+      <JFXRippler layoutX="10.0" layoutY="10.0" prefHeight="163.0" prefWidth="400.0" styleClass="my-block-icons-rippler">
+         <children>
+            <JFXTextArea fx:id="contentTextArea" editable="false" prefHeight="128.0" prefWidth="400.0" styleClass="my-block-content" text="啊发顺丰放松都会粉红色的改变授课风格汇告诉你的控股开始对你" unFocusColor="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </JFXTextArea>
+         </children>
+      </JFXRippler>
+      <JFXRippler prefHeight="73.0" prefWidth="413.0" styleClass="my-block-icons-rippler">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="57.0" prefWidth="39.0" text=" ">
+                     <graphic>
+                            <StackPane styleClass="custom-jfx-list-view-icon-container">
+                               <children>
+                                            <FontAwesomeIconView glyphName="PHONE" size="1.5em" styleClass=".my-block-icon" />
+                               </children>
+                            </StackPane>
+                     </graphic>>
+                  </Label>
+                        <Label fx:id="phoneNumLabel" prefHeight="41.0" prefWidth="297.0" text="18851831150" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="3.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </JFXRippler>
+   </children>
+</VBox>

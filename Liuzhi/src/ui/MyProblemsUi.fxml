@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import org.controlsfx.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="873.0" prefWidth="600.0" stylesheets="@AllProblems.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.MyUserInfoUiController">
+   <bottom>
+      <JFXToolbar prefHeight="105.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <left>
+            <JFXRippler prefHeight="105.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="60.0" prefWidth="100.0" text=" ">
+                  	 <graphic>
+                        <VBox>
+                           <children>
+                                      <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                         <children>
+                                                 <FontAwesomeIconView glyphName="HOME" size="2em" styleClass="custom-jfx-tool-bar-icon" />
+                                         </children>
+                                       </StackPane>
+                              <Label text="个人问题" />
+                           </children>
+                        </VBox>
+               		 </graphic>
+                  </JFXButton>
+               </children></JFXRippler>
+         </left>
+         
+         <center>
+            <JFXRippler prefHeight="105.0" prefWidth="200.0" BorderPane.alignment="TOP_CENTER">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="60.0" prefWidth="100.0" text=" ">
+                     <graphic>
+                        <VBox>
+                           <children>
+                              <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="USERS" size="2em" styleClass="custom-jfx-tool-bar-icon" />
+                                 </children>
+                              </StackPane>
+                              <Label text="全部问题" />
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </JFXRippler>
+         </center>
+         <right>
+            <JFXRippler prefHeight="105.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="60.0" prefWidth="100.0" text=" ">
+                     <graphic>
+                        <VBox>
+                           <children>
+                              <StackPane styleClass="custom-jfx-list-view-icon-container">
+                                 <children>
+                                    <FontAwesomeIconView glyphName="USER" size="2em" styleClass="custom-jfx-tool-bar-icon" />
+                                 </children>
+                              </StackPane>
+                              <Label text="个人信息" />
+                           </children>
+                        </VBox>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </JFXRippler>
+         </right></JFXToolbar>
+   </bottom>
+   <top>
+      <JFXToolbar prefHeight="90.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <ScrollPane fx:id="contentScrollPane" prefHeight="678.0" prefWidth="506.0" BorderPane.alignment="TOP_CENTER">
+         <content>
+            <VBox fx:id="contentVBox" alignment="TOP_CENTER" prefWidth="598.0" spacing="30.0">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </VBox>
+         </content>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>
